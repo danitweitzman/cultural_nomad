@@ -1,60 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-    background-color: #e9e6e3;
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e9e6e3;
 }
 
 h1 {
-    padding-top: 20px;
-    font-family: Helvetica, sans-serif;
+  padding-top: 0px;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 0;
 }
 
-p { 
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+p {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
 }
 
+#containerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Left sidebar */
+#sidebar {
+  width: 200px;
+  height: 580px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: #fafafa;
+  padding: 10px 0;
+}
+
+.sticker {
+  position: relative;  
+  margin: 10px auto;
+  width: 100px;
+  text-align: center;
+}
+
+/* .draggable is assigned to the entire .sticker now. The image inside can be normal. */
+.sticker img {
+  width: 100px; 
+  cursor: grab;
+}
+
+/* Main design area */
 #stickerContainer {
-    width: 800px;         
-    height: 600px;        
-    margin: 20px auto;    
-    border: 1px solid black;
-    border-radius: 10px;
-    position: relative;   
-    overflow: hidden;     
-  }
-  
-  .draggable {
-    width: 100px;       
-    height: auto;
-    cursor: grab;
-    position: absolute; 
-  }
-  
-  .draggable:active {
-    cursor: grabbing;
-  }
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.info {
+  width: 100%;
+}
+
+.remove-button {
+  position: absolute;
+  top: -6px;     
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  text-align: center;
+  background-color: rgb(125, 125, 125);
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+}
+
+#stickerContainer .sticker:hover .remove-button {
+  display: block;
+}
 
 .styled-button {
-    border: none;
-    background-color: rgb(213, 255, 145);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
-
+  border: none;
+  background-color: rgb(213, 255, 145);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
-  

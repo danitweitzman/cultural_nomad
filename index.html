@@ -1,126 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Nomad</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cultural Nomad</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>AD COLLAGE GENERATOR</h1>
-    </header>
+  <header>
+      <h1>Word on the Street</h1>
+  </header>
 
-    <div class="info">
-        <p>THIS IS A COLLECTION OF WORDS EXTRACTED FROM ADVERTISMENTS ALONG 5TH AVE. (14TH ST. TO 23RD ST.) DRAG AND DROP WORDS TO CREATE YOUR OWN DESIGN</p>
+  <div class="info">
+    <p>
+      Every day, we’re surrounded by words—on billboards, storefronts, and flashing screens—telling us what to want, who to be, and how to feel. But what if we could take those words back? This interactive collage lets you cut, rearrange, and redefine the language of advertising to create your own message. What will your word on the street be?
+    </p>
+    <!-- <p>
+      This is a collection of words extracted from advertisments along 5th ave. (14th st. to 23rd st.)
+    </p> -->
+  </div>
+
+  <div id="containerWrapper">
+
+    <div id="sidebar">
+
+        <div class="sticker draggable">
+        <img src="images/advice.png" alt="advice" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/begins.png" alt="begins" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/best.png" alt="best" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/bestie.png" alt="bestie" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/bundle.png" alt="bundle" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/cold.png" alt="cold" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/commit.png" alt="commit" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/crafting.png" alt="crafting" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/energy.png" alt="energy" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/extreme.png" alt="extreme" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/feel.png" alt="feel" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/forever.png" alt="forever" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/happy.png" alt="happy" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/heart.png" alt="heart" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/help.png" alt="help" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/home.png" alt="home" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/hot.png" alt="hot" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/human.png" alt="human" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/inspired.png" alt="inspired" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/mattersoflife.png" alt="matters of life" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/mens.png" alt="mens" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/natural.png" alt="natural" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/open.png" alt="open" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/perfection.png" alt="perfection" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/person.png" alt="person" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/personal.png" alt="personal" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/sensation.png" alt="sensation" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/sleep.png" alt="sleep" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/something.png" alt="something" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/time.png" alt="time" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/want.png" alt="want" />
+      </div>
+      <div class="sticker draggable">
+        <img src="images/well.png" alt="well" />
+      </div>
     </div>
 
-    <div id="stickerContainer">
-        <div class="sticker">
-            <img src="images/advice.png" alt="advice" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/begins.png" alt="begins" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/cold.png" alt="cold" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/help.png" alt="help" class="draggable">
-        </div>
-        <div class="sticker"></div>
-        <div class="sticker">
-            <img src="images/hot.png" alt="hot" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/human.png" alt="human" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/mattersoflife.png" alt="matters of life" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/natural.png" alt="natural" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/sleep.png" alt="sleep" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/open.png" alt="open" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/mens.png" alt="mens" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/well.png" alt="well" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/commit.png" alt="commit" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/happy.png" alt="happy" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/want.png" alt="want" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/time.png" alt="time" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/something.png" alt="something" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/bundle.png" alt="bundle" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/person.png" alt="person" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/feel.png" alt="feel" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/personal.png" alt="personal" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/bestie.png" alt="bestie" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/extreme.png" alt="extreme" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/sensation.png" alt="sensation" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/heart.png" alt="heart" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/perfection.png" alt="perfection" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/crafting.png" alt="crafting" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/best.png" alt="best" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/forever.png" alt="forever" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/inspired.png" alt="inspired" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/energy.png" alt="energy" class="draggable">
-        </div>
-        <div class="sticker">
-            <img src="images/home.png" alt="home" class="draggable">
-        </div>
-    </div>
+    <div id="stickerContainer"></div>
 
-    <div class="buttons">
-        <button onclick="location.href='download.html'" class="styled-button">DOWNLOAD DESIGN</button>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>    
-    <script src="script.js"></script>
+  </div>
+
+  <div class="buttons">
+    <button onclick="location.href='download.html'" class="styled-button">UPLOAD DESIGN</button>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
